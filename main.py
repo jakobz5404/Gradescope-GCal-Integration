@@ -11,7 +11,7 @@ modules = [
 ]
 for module in modules:
     module.run(assignments)
-
+'''
 # Update GitHub workflow with all environment variables
 envs = [x + ': ${{ secrets.' + x + ' }}' for x in Module.envs]
 workflow = workflow_template.replace(
@@ -20,6 +20,6 @@ workflow = workflow_template.replace(
 )
 with open(os.path.join('.github', 'workflows', 'main.yml'), 'w') as file:
     file.write(workflow)
-
-# Save the list to a JavaScript file for Planit to import later
-utils.save_data('assignments', assignments)
+'''
+# Save the list to a json file for Planit to import later
+utils.save_data('assignments.json', assignments)
