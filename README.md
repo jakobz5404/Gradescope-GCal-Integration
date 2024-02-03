@@ -1,6 +1,6 @@
 ## Gradescope Google Calendar Integration
 
-All credit goes to @tanjeffreyz for developing the web scraping service. 
+All credit goes to [@tanjeffreyz](https://github.com/tanjeffreyz) for developing the web scraping service and most of the README. 
 Because some online homework platforms such as Gradescope don't have an API for students (boo👎), web scraping is required to retrieve 
 information about assignments. **HTTP requests** are used alongside **Beautiful Soup** to perform this web scraping, 
 which is automatically executed multiple times a day using **GitHub Actions**.
@@ -10,19 +10,22 @@ which is automatically executed multiple times a day using **GitHub Actions**.
 1. Log into GitHub or <a href="https://github.com/join"><b>create a new GitHub account</b></a> if you don't have one.
 
 2. Click <a href="#"><img src="docs/use_this_template.png" height="20px" /></a> at the top of this page, 
-which should open the following prompt. <b>Make sure "Include all branches" is checked:</b>
+which should open the following prompt.
 <div align="center">
     <img src="docs/generate_prompt.png" width="60%" />
 </div>
 
-3. Enter a name for the new repository. Keep in mind that this name will be used in the URL for your personal 
-<b>Planit</b> webpage, so it's best to keep it short and memorable, like "planit". 
+3. Enter a name for the new repository. <b>I advise you to set the repository to private, otherwise your course data will be able to be publically accessed.</b> If you don't care, you can set it to public.
 Then, click <a href="#"><img src="docs/create_repo_from_template.png" height="20px" /></a>.
 
 4. Visit your new repository's secrets at the following link:
 ```
 https://github.com/YOUR_USERNAME/REPOSITORY_NAME/settings/secrets/actions
 ```
+
+
+## UNFINISHED
+
 
 5. For each homework platform you use, create **two** new 
 <a href="https://docs.github.com/en/actions/security-guides/encrypted-secrets">GitHub secrets</a>: 
