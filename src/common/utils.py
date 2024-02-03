@@ -11,7 +11,7 @@ def get_assignment_dict(title, course, due_date, link, submitted, late_due_date=
         'title': title,
         'course': course,
         'dueDate': dateparser.parse(due_date).isoformat(),
-        'lateDueDate': dateparser.parse(late_due_date).isoformat(),
+        'lateDueDate': dateparser.parse(late_due_date).isoformat() if late_due_date else None,
         'link': link,
         'submitted': submitted
     }
