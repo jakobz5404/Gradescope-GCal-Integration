@@ -22,7 +22,7 @@ def save_data(var_name, obj):
         os.makedirs(DATA_DIR)
     target = os.path.join(DATA_DIR, var_name + '.json')
     with open(target, 'w') as file:
-        file.write(f'{var_name} = {json.dumps(obj, indent=2)};\n')
+        file.write(f'{json.dumps(obj, indent=2)};\n')
 
 
 def json_to_ics(time_offset, json_path=os.path.join(DATA_DIR, 'assignments.json')):
@@ -45,7 +45,7 @@ def json_to_ics(time_offset, json_path=os.path.join(DATA_DIR, 'assignments.json'
                     DTSTART;TZID=UTC:{time}
                     DTEND;TZID=UTC:{time}
                     LOCATION:{assignment['course']}
-                    DESCRIPTION:{assignment['link']}
+                    URL:{assignment['link']}
                     END:VEVENT
                     """
                 ics_str += event_details
@@ -61,7 +61,7 @@ def json_to_ics(time_offset, json_path=os.path.join(DATA_DIR, 'assignments.json'
                         DTSTART;TZID=UTC:{time}
                         DTEND;TZID=UTC:{time}
                         LOCATION:{assignment['course']}
-                        DESCRIPTION:{assignment['link']}
+                        URL:{assignment['link']}
                         END:VEVENT
                         """
                     ics_str += event_details
