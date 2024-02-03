@@ -9,7 +9,7 @@ which is automatically executed every 6 hours using **GitHub Actions**.
 ## One-time Setup Instructions
 1. Log into GitHub or <a href="https://github.com/join"><b>create a new GitHub account</b></a> if you don't have one.
 
-2. Click <a href="#"><img src="docs/use_this_template.PNG" height="80px" /></a> at the top of this page, 
+2. Click <a href="#"><img src="docs/use_this_template.PNG" height="80px" style="vertical-align: text-top;"/></a> at the top of this page, 
 which should open the following prompt.
 <div align="center">
     <img src="docs/generate_prompt.PNG" width="60%" />
