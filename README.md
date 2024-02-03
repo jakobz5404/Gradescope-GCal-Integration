@@ -9,14 +9,14 @@ which is automatically executed multiple times a day using **GitHub Actions**.
 ## One-time Setup Instructions
 1. Log into GitHub or <a href="https://github.com/join"><b>create a new GitHub account</b></a> if you don't have one.
 
-2. Click <a href="#"><img src="docs/use_this_template.png" height="20px" /></a> at the top of this page, 
+2. Click <a href="#"><img src="docs/use_this_template.PNG" height="20px" /></a> at the top of this page, 
 which should open the following prompt.
 <div align="center">
     <img src="docs/generate_prompt.png" width="60%" />
 </div>
 
 3. Enter a name for the new repository. <b>I advise you to set the repository to private, otherwise your course data will be able to be publically accessed.</b> If you don't care, you can set it to public.
-Then, click <a href="#"><img src="docs/create_repo_from_template.png" height="20px" /></a>.
+Then, click <b>Create Repo From Template</b>.
 
 4. Visit your new repository's secrets at the following link:
 ```
