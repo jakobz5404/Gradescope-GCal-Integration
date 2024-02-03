@@ -76,7 +76,7 @@ def json_to_ics(time_offset, json_path=os.path.join(DATA_DIR, 'assignments.json'
 def old_cleaner(json_path=os.path.join(DATA_DIR, 'assignments.json'), cutoff=180):
     with open(json_path, 'r') as json_file:
         data = json.load(json_file)
-    cutoff_date = datetime.now(timezone.utc) - timedelta(days=cutoff)
+    cutoff_date = datetime.now() - timedelta(days=cutoff)
     data.items()
     for course, course_assignments in data.items():
         # Filter assignments that are newer than cutoff_date
