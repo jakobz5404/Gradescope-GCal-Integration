@@ -25,7 +25,7 @@ def save_data(var_name, obj):
         file.write(f'{var_name} = {json.dumps(obj, indent=2)};\n')
 
 
-def json_to_ics(time_offset, json_path=r"data\assignments.json", ):
+def json_to_ics(time_offset, json_path=os.path.join(DATA_DIR, 'assignments.json')):
     with open(json_path, 'r') as json_file:
         data = json.load(json_file)
     ics_str = """BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//github.com/jakobz5404/Gradescope-iCal-Integration//EN\nCALSCALE:GREGORIAN\n"""
@@ -73,7 +73,7 @@ def json_to_ics(time_offset, json_path=r"data\assignments.json", ):
         file.write(ics_str)
 
 
-def old_cleaner(json_path=r"data\assignments.json", cutoff=180):
+def old_cleaner(json_path=os.path.join(DATA_DIR, 'assignments.json'), cutoff=180):
     with open(json_path, 'r') as json_file:
         data = json.load(json_file)
     cutoff_date = datetime.now(timezone.utc) - timedelta(days=cutoff)
