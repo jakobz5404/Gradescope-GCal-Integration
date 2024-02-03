@@ -22,7 +22,7 @@ def save_data(var_name, obj):
         os.makedirs(DATA_DIR)
     target = os.path.join(DATA_DIR, var_name + '.json')
     with open(target, 'w') as file:
-        file.write(f'{json.dumps(obj, indent=2)};\n')
+        file.write(f'{json.dumps(obj, indent=2)}')
 
 
 def json_to_ics(time_offset, json_path=os.path.join(DATA_DIR, 'assignments.json')):
