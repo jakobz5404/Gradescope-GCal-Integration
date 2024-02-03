@@ -13,7 +13,6 @@ for module in modules:
     module.run(assignments)
 
 # Update GitHub workflow with all environment variables
-workflow_template = utils.load_template('workflow_template.yml')
 envs = [x + ': ${{ secrets.' + x + ' }}' for x in Module.envs]
 workflow = workflow_template.replace(
     '__ENV__',
