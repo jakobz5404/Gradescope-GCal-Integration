@@ -1,8 +1,3 @@
-<div align="center">
-    <img src="src/resources/planit_logo.png" height="50px" />
-    <h1>Planit</h1>
-</div>
-
 An assignment tracker that compiles due dates into an interactive, minimalist calendar. Because 
 some online homework platforms such as Gradescope don't have an API for students, web scraping is required to retrieve 
 information about assignments. **HTTP requests** are used alongside **Beautiful Soup** to perform this web scraping, 
