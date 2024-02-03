@@ -88,6 +88,6 @@ def old_cleaner(json_path=os.path.join(DATA_DIR, 'assignments.json'), cutoff=180
         data[course] = [
             assignment for assignment in course_assignments
             if datetime.strptime(assignment['lateDueDate'] if assignment['lateDueDate'] else assignment['dueDate'],
-                                 "%Y%m%dT%H%M%SZ") >= cutoff_date
+                                 "%Y%m%dT%H%M%S") >= cutoff_date
         ]
     save_data("assignments", data)
