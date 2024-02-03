@@ -1,6 +1,6 @@
 ## Gradescope Google Calendar Integration
 
-All credit goes to https://github.com/tanjeffreyz for developing the web scraping service. 
+All credit goes to @tanjeffreyz for developing the web scraping service. 
 Because some online homework platforms such as Gradescope don't have an API for students (boo👎), web scraping is required to retrieve 
 information about assignments. **HTTP requests** are used alongside **Beautiful Soup** to perform this web scraping, 
 which is automatically executed multiple times a day using **GitHub Actions**.
