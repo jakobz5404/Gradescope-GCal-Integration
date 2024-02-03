@@ -90,10 +90,8 @@ class Gradescope(Module):
         """Returns the title of an assignment given its row in the table."""
 
         due_date = row.find_all('time', {'class': 'submissionTimeChart--dueDate'})
-        if due_date is not None:
-            return due_date.text
-        else:
-            return None
+        return [date.text for date in due_date]
+
 
     @staticmethod
     def _get_assignment_status(row):
