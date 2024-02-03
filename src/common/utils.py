@@ -45,14 +45,14 @@ def json_to_ics(time_offset, json_path=os.path.join(DATA_DIR, 'assignments.json'
                 else:
                     time = datetime.strftime(
                         datetime.strptime(assignment['dueDate']) + timedelta(minutes=int(time_offset * 60)))
-                event_details = (f"BEGIN:VEVENT\n"
-                                 f"SUMMARY:{fold_line(assignment['title'])}\n"
-                                 f"DTSTAMP:{datetime.now().strftime('%Y%m%dT%H%M%SZ')}\n"
-                                 f"DTSTART:{time}\n"
-                                 f"LOCATION:{fold_line(assignment['course'])}\n"
-                                 f"URL:{fold_line(assignment['link'])}\n"
-                                 f"UID:{uid}\n"
-                                 f"END:VEVENT\n")
+                event_details = (f"BEGIN:VEVENT\r\n"
+                                 f"SUMMARY:{fold_line(assignment['title'])}\r\n"
+                                 f"DTSTAMP:{datetime.now().strftime('%Y%m%dT%H%M%SZ')}\r\n"
+                                 f"DTSTART:{time}\r\n"
+                                 f"LOCATION:{fold_line(assignment['course'])}\r\n"
+                                 f"URL:{fold_line(assignment['link'])}\r\n"
+                                 f"UID:{uid}\r\n"
+                                 f"END:VEVENT\r\n")
                 ics_str += event_details
                 if assignment['lateDueDate']:
                     uid = uid + 1
@@ -61,14 +61,14 @@ def json_to_ics(time_offset, json_path=os.path.join(DATA_DIR, 'assignments.json'
                     else:
                         time = datetime.strftime(
                             datetime.strptime(assignment['lateDueDate']) + timedelta(minutes=int(time_offset * 60)))
-                    event_details = (f"BEGIN:VEVENT\n"
-                                     f"SUMMARY:{fold_line('Late Due Date: ' + assignment['title'])}\n"
-                                     f"DTSTAMP:{datetime.now().strftime('%Y%m%dT%H%M%SZ')}\n"
-                                     f"DTSTART:{time}\n"
-                                     f"LOCATION:{fold_line(assignment['course'])}\n"
-                                     f"URL:{fold_line(assignment['link'])}\n"
-                                     f"UID:{uid}\n"
-                                     f"END:VEVENT\n")
+                    event_details = (f"BEGIN:VEVENT\r\n"
+                                     f"SUMMARY:{fold_line('Late Due Date: ' + assignment['title'])}\r\n"
+                                     f"DTSTAMP:{datetime.now().strftime('%Y%m%dT%H%M%SZ')}\r\n"
+                                     f"DTSTART:{time}\r\n"
+                                     f"LOCATION:{fold_line(assignment['course'])}\r\n"
+                                     f"URL:{fold_line(assignment['link'])}\r\n"
+                                     f"UID:{uid}\r\n"
+                                     f"END:VEVENT\r\n")
                     ics_str += event_details
     ics_str += "END:VCALENDAR\n"
     if not os.path.exists(DATA_DIR):
