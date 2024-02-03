@@ -12,11 +12,11 @@ which is automatically executed every 6 hours using **GitHub Actions**.
 2. Click <a href="#"><img src="docs/use_this_template.PNG" height="20px" /></a> at the top of this page, 
 which should open the following prompt.
 <div align="center">
-    <img src="docs/generate_prompt.png" width="60%" />
+    <img src="docs/generate_prompt.PNG" width="60%" />
 </div>
 
 3. Enter a name for the new repository. <b>I advise you to set the repository to private, otherwise your course data will be able to be publically accessed.</b> If you don't care, you can set it to public.
-Then, click <b>Create Repo From Template</b>.
+Then, click <b>Create Repo</b>.
 
 4. Visit your new repository's secrets at the following link:
 ```
