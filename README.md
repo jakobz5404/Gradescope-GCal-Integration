@@ -3,7 +3,7 @@
 All credit goes to [@tanjeffreyz](https://github.com/tanjeffreyz) for developing the web scraping service and most of the README. 
 Because some online homework platforms such as Gradescope don't have an API for students (boo👎), web scraping is required to retrieve 
 information about assignments. **HTTP requests** are used alongside **Beautiful Soup** to perform this web scraping, 
-which is automatically executed multiple times a day using **GitHub Actions**.
+which is automatically executed every 6 hours using **GitHub Actions**.
 
 
 ## One-time Setup Instructions
