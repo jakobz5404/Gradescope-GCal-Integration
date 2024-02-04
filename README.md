@@ -1,6 +1,6 @@
 ## Gradescope iCalendar Integration
 
-All credit goes to [@tanjeffreyz](https://github.com/tanjeffreyz) for developing the web scraping service and most of the README. Also, [@zyonse]{https://github.com/zyonse} has a similar program that you can find [here]{https://github.com/tanjeffreyz/planit/pull/2}. I don't know if it works.
+All credit goes to [@tanjeffreyz](https://github.com/tanjeffreyz) for developing the web scraping service and most of the README. Also, [@zyonse](https://github.com/zyonse) has a similar program that you can find [here](https://github.com/tanjeffreyz/planit/pull/2). I don't know if it works.
 
 Because some online homework platforms such as Gradescope don't have an API for students (boo👎), web scraping is required to retrieve 
 information about assignments. **HTTP requests** are used alongside **Beautiful Soup** to perform this web scraping, 
@@ -9,7 +9,7 @@ which is automatically executed every 6 hours (starting at 12am EST) using **Git
 
 ## One-time Setup Instructions
 1. Log into GitHub or <a href="https://github.com/join"><b>create a new GitHub account</b></a> if you don't have one.
-## UNFINISHED
+
 2. Click <a href="#"><img src="docs/use_this_template.PNG" height="80px" style="vertical-align: text-top;"/></a> at the top of this page, 
 which should open the following prompt.
 <div align="center">
@@ -26,7 +26,7 @@ https://github.com/YOUR_USERNAME/REPOSITORY_NAME/settings/secrets/actions
 
 ## Configuration
 
-
+## UNFINISHED
 
 5. For each homework platform you use, create **two** new 
 <a href="https://docs.github.com/en/actions/security-guides/encrypted-secrets">GitHub secrets</a>: 
