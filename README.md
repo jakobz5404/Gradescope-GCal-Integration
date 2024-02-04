@@ -1,6 +1,7 @@
 ## Gradescope iCalendar Integration
 
-All credit goes to [@tanjeffreyz](https://github.com/tanjeffreyz) for developing the web scraping service and most of the README. 
+All credit goes to [@tanjeffreyz](https://github.com/tanjeffreyz) for developing the web scraping service and most of the README. Also, [@zyonse]{https://github.com/zyonse} has a similar program that you can find [here]{https://github.com/tanjeffreyz/planit/pull/2}. I don't know if it works.
+
 Because some online homework platforms such as Gradescope don't have an API for students (boo👎), web scraping is required to retrieve 
 information about assignments. **HTTP requests** are used alongside **Beautiful Soup** to perform this web scraping, 
 which is automatically executed every 6 hours (starting at 12am EST) using **GitHub Actions**. This time can be edited by changing the [cron value](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule) in main.yml.
@@ -15,7 +16,7 @@ which should open the following prompt.
     <img src="docs/generate_prompt.PNG" width="60%" />
 </div>
 
-3. Enter a name for the new repository. <b>I advise you to set the repository to private, otherwise your course data will be able to be publically accessed.</b> If you don't care, you can set it to public.
+3. Enter a name for the new repository. <b>You will need to set it to public.</b> This is the only way that your calendar can access the data. All calendar links are public and work this way.
 Then, click <b>Create Repo</b>.
 
 4. Visit your new repository's secrets at the following link:
@@ -23,7 +24,7 @@ Then, click <b>Create Repo</b>.
 https://github.com/YOUR_USERNAME/REPOSITORY_NAME/settings/secrets/actions
 ```
 
-
+## Configuration
 
 
 
