@@ -8,7 +8,7 @@ on:
   push:
     branches: [ main ]
   schedule:
-  - cron: '0 5,11,17,23 * * *'
+  - cron: '0 5,11,17,23 * * *' # Hours 5, 11, 17, and 23 in UTC time (0, 6, 12, and 18 in EST)
   workflow_dispatch:
 
 
