@@ -1,7 +1,7 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Gradescope GCal Integration
+name: Gradescope iCal Integration
 
 
 on: 
@@ -22,12 +22,12 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Upgrade to latest Gradescope GCal Integration version
+    - name: Upgrade to latest Gradescope iCal Integration version
       run: |
         git config --global user.name 'Gradescope-iCal-Integration'
         git config --global user.email 'Gradescope-iCal-Integration@jakobz5404.github.io'
         git config --global pull.rebase false
-        git remote add Gradescope-GCal-Integration 'https://github.com/jakobz5404/Gradescope-iCal-Integration'
+        git remote add Gradescope-iCal-Integration 'https://github.com/jakobz5404/Gradescope-iCal-Integration'
         git fetch Gradescope-iCal-Integration
         git checkout Gradescope-iCal-Integration/main -- .
         git checkout HEAD -- data || true
