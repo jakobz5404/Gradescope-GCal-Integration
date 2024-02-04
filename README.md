@@ -4,7 +4,7 @@ All credit goes to [@tanjeffreyz](https://github.com/tanjeffreyz) for developing
 
 Because some online homework platforms such as Gradescope don't have an API for students (boo👎), web scraping is required to retrieve 
 information about assignments. **HTTP requests** are used alongside **Beautiful Soup** to perform this web scraping, 
-which is automatically executed every 6 hours (starting at 12am EST) using **GitHub Actions**. This time can be edited by changing the [cron value](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule) in main.yml.
+which is automatically executed every 6 hours (starting at 12am EST) using **GitHub Actions**. This time can be edited by changing the [cron value](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule) in main.yml. This will create an ics file which you can add to any major calendar service. The program will not add any completed assignments, as well as any assignments older than 180 days. Let me know if you want to be able to change this value.
 
 
 ## One-time Setup Instructions
@@ -47,15 +47,6 @@ https://github.com/YOUR_USERNAME/REPOSITORY_NAME/settings/actions
 <div align="center">
     <img src="docs/workflow_perms.png" width="60%" />
 </div>
-
-8. Next, go to the following link:
-```
-https://github.com/YOUR_USERNAME/REPOSITORY_NAME/settings/pages
-```
-
-9. 
-
-
 
 ## Starting the program
 Using the file navigation in your repository's home page, go to `data/assignments.json`, **delete** the file, and click 
