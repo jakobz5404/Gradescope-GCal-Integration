@@ -17,7 +17,7 @@ which should open the following prompt.
 </div>
 
 3. Enter a name for the new repository. <b>You will need to set it to public.</b> This is the only way that your calendar can access the data. All calendar links are public and work this way.
-Then, click <b>Create Repo</b>.
+Then, click <b>Create Repository</b>.
 
 4. Visit your new repository's secrets at the following link:
 ```
@@ -25,6 +25,20 @@ https://github.com/YOUR_USERNAME/REPOSITORY_NAME/settings/secrets/actions
 ```
 
 ## Configuration
+5. For each homework platform you use, create **two** new 
+<a href="https://docs.github.com/en/actions/security-guides/encrypted-secrets">GitHub secrets</a>: 
+one for your **username** and one for your **password**. A new secret can be created by clicking 
+<a href="#"><img src="docs/new_repo_secret.png" height="20px" /></a>. 
+<b>For each secret's "Name" field, you must only use the values listed below.
+In the "Secret" field, enter either your username or password depending on the value you chose for the "Name" field.</b>
+
+<table align="center">
+    <tr><th align="center">Username</th><th align="center">Password</th></tr>
+    <tr align="center"><td>GRADESCOPE_USER</td><td>GRADESCOPE_PASSWORD</td></tr>
+</table>
+
+6. Now, go to the following link:
+
 
 ## UNFINISHED
 
